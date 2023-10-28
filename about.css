@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Source Code Pro', monospace;
+    background-image: url('images/rm183-wan-11.jpg');
+    background-size: cover;
+    background-position: calc(100% + 45px) center;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns:  1fr 10fr 1fr 1em;
+    grid-template-areas:
+    " . . . ."
+    " . navmenu navmenu ."
+    " . main . ."
+    " . . . ."
+    " . nav nav .";
+
+    grid-template-rows: 4rem 7% 1fr 5% auto;
+}
+
+.icon-bar { grid-area: nav; }
+.nav-menu { grid-area: navmenu; }
+main { grid-area: main;}
+
+/* FLEXBOXES */
+.nav-menu,
+.icon-bar {
+    display: flex;
+}
+
+/* NAVAGATION MENU */
+.nav-menu {
+    flex-direction: column;
+    align-items: end;
+    margin-right: 1.95rem;
+    margin-top: 0.35rem;
+}
+
+.nav-menu-text {
+    margin: 0;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    color: #1cd670;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.nav-menu-text:hover {
+    cursor: pointer;
+    color: #000000;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: inherit; 
+    background: transparent; 
+
+}
+
+/* MAIN CONTENT */
+.main-content-box {
+    margin: 0;
+    border: 1px solid #1cd670;
+    background-color: #2D3134;
+}
+
+#main-content-img { grid-area: img; }
+.main-content-title,
+.main-content-description { 
+    grid-area: text;
+    color: beige;
+}
+
+.main-content-title { 
+    justify-self: start;
+    margin-top: 0.5rem;
+    text-shadow: 2px 2px 2px #000000
+}
+
+.main-content-description { 
+    align-self: center;
+    margin-top: 3rem;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+
+/* OFFSITE LINKS */
+.icon-bar img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.icon-bar {
+    justify-content: end;
+    align-items: center;
+    height: auto;
+    padding-bottom: 1rem;
+
+}
+

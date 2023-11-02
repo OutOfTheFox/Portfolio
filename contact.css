@@ -18,8 +18,7 @@ body {
     ". . . . ."
     ". . nav nav .";
 
-    grid-template-rows: 3rem 21% auto 27% 3rem;
-
+    grid-template-rows: 3rem 20% auto 28% 3rem;
 }
 
 .icon-bar { grid-area: nav; }
@@ -48,7 +47,7 @@ Darker Pallet
 .nav-menu,
 .icon-bar,
 main,
-.project-container {
+.contact-container {
     display: flex;
 }
 
@@ -103,47 +102,34 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
     justify-self: center;
-    width: 350px;
 }
 
-.project-container {
-    align-items: center;
-    padding: 0.25em;
-}
-
-.text-container {
-    padding-left: 2em;
-}
-
-.main-content-title {
+.main-title {
     font-size: 0.95rem;
     color: #475659;
     text-shadow: 1px 1px 1px #475659;
+}
+
+.contact-container {
+    align-items: center;
+}
+
+
+.contact-container img {
+    width: 35px;
 }
 
 .data {
     font-size: 0.9rem;
     color: #475659;
     text-shadow: 1px 1px 1px #475659;
-}
-
-.portfolio-icon {
-    width: 40px;
+    padding-left: 0.9em;
 }
 
 
 .big-text {
-    font-size: 1em;
+    font-size: 1.1em;
 }
-
-.project-container:hover {
-    /* border: 1px solid black; */
-}
-
-.project-container:hover .image-container img {
-    content: url('images/arrow-svg-black.svg'); 
-  }
-  
 
 /* OFFSITE LINKS */
 .icon-bar img {

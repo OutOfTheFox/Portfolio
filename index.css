@@ -18,7 +18,8 @@ body {
     ". . . . ."
     ". . nav nav .";
 
-    grid-template-rows: 3rem 20% auto 28% 3rem;
+    grid-template-rows: 3rem 23% auto 30% 3rem;
+
 }
 
 .icon-bar { grid-area: nav; }
@@ -46,8 +47,7 @@ Darker Pallet
 /* FLEXBOXES */
 .nav-menu,
 .icon-bar,
-main,
-.contact-container {
+main {
     display: flex;
 }
 
@@ -100,35 +100,19 @@ h2 {
 
 main {
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     justify-self: center;
 }
 
-.main-title {
-    font-size: 0.95rem;
-    color: #475659;
-    text-shadow: 1px 1px 1px #475659;
-}
-
-.contact-container {
-    align-items: center;
-}
-
-
-.contact-container img {
-    width: 35px;
-}
-
 .data {
-    font-size: 0.7rem;
+    font-size: 1rem;
     color: #475659;
     text-shadow: 1px 1px 1px #475659;
-    padding-left: 0.9em;
 }
 
 
 .big-text {
-    font-size: 0.5em;
+    font-size: 1.225rem;
 }
 
 /* OFFSITE LINKS */
@@ -154,7 +138,7 @@ main {
         grid-template-areas:
     
         ".. navmenu navmenu navmenu  .. .."
-        ".. main main main ... ..."
+        ".. ... ... ... ... ..."
         ".. main main main .. .."
         ".. main main main .. .."
         ".. main main main .. .."
@@ -172,11 +156,5 @@ main {
     .nav-menu{
         align-self: end;
     }
-
-    .data {
-        font-size: 0.9rem;
-        color: #475659;
-        text-shadow: 1px 1px 1px #475659;
-        padding-left: 0.9em;
-    }
+    
 }

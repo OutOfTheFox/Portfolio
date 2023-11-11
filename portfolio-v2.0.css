@@ -144,11 +144,13 @@ main {
 }
 
 
-
-
-
 .project-container:hover .image-container img {
     content: url('images/arrow-svg-black.svg'); 
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
   
 
@@ -193,6 +195,7 @@ main {
     }
 
     .description-section { 
+        height: 500px;
         grid-area: desc;
         display: flex;
         flex-direction: column;
@@ -208,9 +211,6 @@ main {
 
     }
 
-    #description1 {
-        display: none;
-    }
 
 
 
@@ -254,8 +254,6 @@ main {
         justify-self: start;
     }
 
-
-
     #project4 {
         display: flex;
     }
@@ -264,4 +262,9 @@ main {
         background-color: #F2F2F0;
         border: 3px solid #0D0D0D;
     }
+
+    .hidden {
+        display: none;
+    }
+
 }
